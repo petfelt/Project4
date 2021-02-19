@@ -12,6 +12,7 @@ namespace Project4
 
         private void buttonTotalPrice_Click(object sender, EventArgs e)
         {
+            // Introduce decimal variables for manipulation.
             const decimal ICE_CREAM_FLAVOR_CHOCOLATE = 4.00M;
             const decimal ICE_CREAM_FLAVOR_VANILLA = 4.00M;
             const decimal ICE_CREAM_FLAVOR_STRAWBERRY = 4.00M;
@@ -22,6 +23,7 @@ namespace Project4
 
             decimal totalPrice = 0;
 
+            // radioButton & checkBox variable attachment & check.
             if (radioButtonChocolate.Checked == true)
             {
                 totalPrice = ICE_CREAM_FLAVOR_CHOCOLATE;
@@ -50,6 +52,7 @@ namespace Project4
                 totalPrice += TOPPING_CHERRY;
             }
 
+            // Setting label price.
             labelTotalPrice.Text = "$" + totalPrice.ToString();
         }
 
